@@ -11,4 +11,9 @@ Click a “mole” as it appears. The amount of time each mole stays visible sho
 - The game should function consistently in IE11+ and one other major browser
 - The game should function consistently in at least 2 unique viewport sizes
 
+## Notes
+- Tested in IE11 and Chrome
+- There are media queries to cover several viewport sizes
+- Sass files are included
+
 In the immortal words of Jean Paul Sartre, 'Au revoir, gopher'.
