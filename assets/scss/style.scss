@@ -1,0 +1,413 @@
+@import "./scoreboard.scss";
+@import "./gameboard.scss";
+@import "./typography.scss";
+
+/*
+        General styles
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.a11y {
+    position: absolute;
+    left: -9999px;
+}
+
+.game-controls {
+    position: relative;
+    bottom:0;
+    text-align: center;
+    height: auto;
+    padding: 0.5em;
+    background-color: #fff;
+
+    .buttonwrapper { 
+        display: block;
+        padding: 0.5em 0 0.5em;
+    }
+
+    .btn {
+        margin: 0.5em;
+        height: 3em;
+        width: 6em;
+        border-radius: 0.5em;
+        outline: none;
+    }
+
+    .btn.start {
+        background-color: green;
+    }
+
+    .btn.stop {
+        background-color: red;
+    }
+
+    .btn.reset {
+        display: inline-block;
+        background-color: blue;
+    }
+}
+
+.extraLeft {
+    display: none;
+    position: relative;
+}
+
+.extraRight {
+    display: none;
+    position: relative;
+}
+
+.extraBottom {
+    display: none;
+}
+
+
+
+/* -----     Media Queries     ----- */
+/*  below 600px; */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        min-width: 500px;
+        background-attachment: fixed;
+        background-image: url("../images/extra/carl-bushes.jpg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+
+        .scoreboard{
+            display: block;
+            padding: 0.5em 0 0em;
+
+            .div {
+                display: block;
+                width: 98%;
+                border: #fff;
+            }
+
+            .logo {
+                width: 100%;
+                padding: 0;
+            }
+
+            .sb {
+                width: 100%;
+                padding: 0 0 0.5em;
+            }
+
+            h1 { 
+                font-size: 1.5em;
+                margin: 0.5em; 
+            }
+
+            h2 {
+                font-size: 1em;
+                margin: 0.5em;
+            }
+        }
+
+        .gameboard-wrapper {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            
+            .gameboard {
+                width: 100%;
+                padding: 1em 0;
+
+                .row{
+                    .hillwrapper {
+                        .molehill,
+                        .mole {
+                            width: 75px;
+                            height: 75px;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+
+        .extraBottom {
+            display: none;
+        }
+    }
+}
+
+/*  601px to 767px   */
+@media only screen and (min-width: 601px) and(max-width: 767px) {
+    .wrapper {
+        display: block;
+        height: 100vh;
+        background-image: url("../images/extra/carl-bushes.jpg");
+        background-attachment: fixed;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+
+        .scoreboard{
+            display: block;
+            padding: 0.5em 0 0.5em;
+
+            .div {
+                display: block;
+                width: 98%;
+                border: #fff;
+            }
+
+            .logo {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+
+            .sb {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+
+            h1 { 
+                font-size: 1.5em;
+                margin: 0; 
+            }
+
+            h2 {
+                font-size: 1.5em;
+                margin: 0.5 1.5em;
+            }
+        }
+
+        .gameboard-wrapper {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            
+            .gameboard {
+                width: 100%;
+                padding: 0;
+
+                .hillwrapper {
+                    .molehill,
+                    .mole {
+                        width: 90px;
+                        height: 90px;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+
+        .game-controls {
+            height: auto;
+        }
+
+        .extraBottom {
+            display: none;
+        }
+    }
+}
+
+/*  768px - 991px   */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        .scoreboard {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 1em 0.5em;
+
+            .div {
+                display: inline-block;
+                width: 98%;
+                border: #fff;
+            }
+
+            .logo {
+                padding: 0;
+                margin-right: 5%;
+            }
+
+            .sb {
+                padding: 0;
+                
+            }
+
+            h1 { 
+                font-size: 2em;
+                margin: 0 1em; 
+            }
+
+            h2 {
+                font-size: 1.5em;
+                margin: 1em;
+            }
+        }
+
+        .gameboard-wrapper {
+            width: 100%;
+            height: auto;
+            text-align:center;
+            flex: 1 1 auto;
+            padding: 0;
+            
+            .gameboard {
+                width: 100%;
+                padding: 0;
+
+                .row {
+                    .hillwrapper {
+                        .molehill,
+                        .mole {
+                            width: 125px;
+                            height: 125px;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .game-controls {
+            padding: 0.5em 0;
+            height: auto;
+
+            .buttowrapper {
+                margin: 0 0 2em 0;
+            }
+        }
+
+        .extraBottom {
+            margin: 0.5em 0 0;
+        }
+    }
+
+    .extraBottom {
+        display: block;
+        bottom: 0;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 300px;
+        z-index: 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+        span{
+            display: inline-block;
+        }
+    }
+}
+    
+/*  992px    */
+@media only screen and (min-width: 992px) and (max-width: 1381px) {
+    .wrapper {
+
+        .scoreboard{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .div {
+                display: inline-block;
+                border: #fff;
+            }
+
+            .logo {
+                padding: 0;
+                margin-right: 0;
+            }
+            .sb {
+                padding: 1em 0 0;
+            }
+
+            h1 {
+                font-size: 2em;
+                display: inline-block;
+                margin: 0.5 1em;
+            }
+
+            h2{
+                font-size: 1.5em;
+                margin: 1em 1em;
+            }
+        }
+
+        .gameboard-wrapper {
+            width: 100%;
+            height: auto;
+            text-align:center;
+            flex: 1 1 auto;
+            padding: 0;
+            
+            .gameboard {
+                width: 100%;
+                padding: 0;
+
+                .row {
+                    padding: 1em;
+
+                    .hillwrapper {
+                        .molehill,
+                        .mole {
+                            width: 150px;
+                            height: 150px;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+
+        .extraBottom {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+    
+/*  1382px   */
+@media only screen and (min-width: 1382px){
+    .wrapper {
+
+        .gameboard-wrapper {
+            background-image: url("../images/extra/carl-gopher2.png");
+
+            .gameboard { 
+                width: 58%;
+            }
+        }
+
+        .extraBottom {
+            display: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+/* 
+        TYPOGRAPHY
+
+        Using Abode Typekit Fonts
+*/
+@import "https://use.typekit.net/pzk4dup.css";
+.wrapper {
+    .scoreboard {
+        h1 {
+        color: red;
+        font-family: "whomp";
+        font-weight: normal;
+        font-size: 2.5em;
+        }
+        
+        h2 {
+            font-family: sans-serif;
+            font-size: 2em;
+            color: #fff;
+        
+            span {
+                color: yellow;
+            }
+        
+            span.warning {
+                color: red;
+            }
+        }
+    }
+}
+
+.game-controls {
+    .btn{
+        font-size: 1em;
+        color: #fff;
+    }
+}
+
+/* ========== END TYPOGRAPHY ================ */
