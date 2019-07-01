@@ -1,5 +1,5 @@
 # Spackler
-Spackler is a Caddyshack themed Whack-A-Mole game...Let's do the same thing but with gophers. Bushwood Country Club is under seige and it's your job to stop the fuzzy invasion!
+Spackler is a Caddyshack themed Whack-A-Mole game... Let's do the same thing but with gophers. Bushwood Country Club is under seige and it's your job to stop the fuzzy invasion!
 
 ## Technologies
 Only HTML, CSS and JavaScript are used.

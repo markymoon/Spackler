@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Whack-A-Mole Test by Mark Smith</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="wrapper">
+            <header class="scoreboard">
+                <a id="skip-nav" class="skip-nav a11y" href="#main">Skip to content.</a>
+
+                <div class="logo"><h1>Whack-A-Mole!</h1></div>
+                <div class="sb" role="region" aria-live="polite">
+                    <h2>Score: <span id="score"></span></h2>
+                    <h2>Time: <span id="timer"></span></h2>
+                </div>
+            </header>
+
+            <main>
+                
+                <!-- Game Board Wrapper -->
+                <section class="gameboard-wrapper">
+                    <!-- Scoreboard and Timer -->
+                    <div class="gameboard">
+
+                        <!-- Row 1 -->
+                        <div class="row">
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-1">
+                                    <a href="#" class="mole" id="mole-1"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-2">
+                                    <a href="#" class="mole" id="mole-2"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-3">
+                                    <a href="#" class="mole" id="mole-3"></a>
+                                </span>
+                            </div>
+                        </div>
+                            
+                        <!-- Row 2 -->
+                        <div class="row">
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-4">
+                                    <a href="#" class="mole" id="mole-4"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill"  id="molehill-5">
+                                    <a href="#" class="mole" id="mole-5"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-6">
+                                    <a href="#" class="mole" id="mole-6"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-7">
+                                    <a href="#" class="mole" id="mole-7"></a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="row">
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-8">
+                                    <a href="#" class="mole" id="mole-8"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-9">
+                                    <a href="#" class="mole" id="mole-9"></a>
+                                </span>
+                            </div>
+                            <div class="hillwrapper">
+                                <span class="molehill" id="molehill-10">
+                                    <a href="#" class="mole" id="mole-10"></a>
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div><!-- END gameboard -->
+                
+                    
+                    
+                </section>
+                <!-- timer buttons -->
+                <footer class="game-controls">
+                    <div class="buttonwrapper">
+                        <h1 class="a11y">Game Controls</h1>
+                        <button class="btn start" id="startButton" data-action="start">Start</button>
+                        <button class="btn stop"  id="stopButton"  data-action="stop">Stop</button>
+                        <button class="btn reset" id="resetButton" data-action="reset">Reset</button>
+                    </div>
+                    <div class="extraBottom"><img src="assets/images/carl-gopher.png" alt="Photo: Carl Spackler confronts the gopher"/></div>
+                </footer>
+                
+            </main>
+        </div>
+
+        <script src="./assets/js/whackamole.js" async defer></script>
+    </body>
+</html>
